@@ -1,0 +1,19 @@
+:root{
+    --primarycolor: rgb(181, 247, 181);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 97vh;
+    background-color: var(--primarycolor);
+}
+
+.footer{
+    height: 3vh;
+    background-color: pink;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
