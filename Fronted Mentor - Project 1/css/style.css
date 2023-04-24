@@ -1,0 +1,87 @@
+/* - Mobile: 375px
+- Desktop: 1440px 
+### Body Copy
+
+- Font size (paragraph): 15px
+Weights: 400, 700
+*/
+/*General reset and color */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: variableFont;
+    src: url(../assets/ttf/Outfit-VariableFont_wght.ttf);
+}
+/*Main Index*/
+.main{
+    height: 97vh;
+    background-color: var(--lightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__container{ 
+    max-width: 500px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.main__container-image img{
+    width: 350;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 2%;
+    margin-bottom: 30px;
+}
+.main__container-text h1{
+    font-family: variableFont;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main__container-text p{
+    font-family: variableFont;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grayishBlue);
+    text-align: center;
+}
+/* Footer */
+.footer{
+    height: 3vh;
+    background-color: pink;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px) {
+    .main__container-image img {
+      width: 200px;
+      height: 200px;
+    }
+    .main__container{ 
+        max-width: 300px;
+    }
+    .main__container-text h1{
+        font-size: 15px;
+    }
+    .main__contaner-text p{
+        font-size: 11px;
+    }
+}
+  
