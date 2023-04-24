@@ -1,12 +1,11 @@
-https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <!-- CSS-->
+  <link rel="stylesheet" href="./css/style.css" />
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
@@ -14,24 +13,27 @@ https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttR
   <main class="main">
     <section class="main__container">
       <div class="main__container-image">
-        <img src="./assets/images/image-product-desktop.jpg" alt="Product">
+        <img src="./assets/images/image-product-desktop.jpg" alt="Product Desktop">
       </div>
-      
-      <div class="main__container-text">
-        <p>Preview</p> 
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        
-        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-        Perfumer-Creator for the House of CHANEL.        
-        
-        <div class="main__container-text-price">
-          <p class="newPrice">$149.99 </p> <p class="oldPrice">$169.99 </p>
-        </div>
-        <a href="#"><button>Add to Cart</button></a>
+      <div class="main__container-imageMobile">
+        <img src="./assets/images/image-product-mobile.jpg" alt="Product Desktop">
+      </div>
 
+      <div class="main__container-text">
+        <div class="main__container-textDescription">
+          <p>Preview</p> 
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p> 
+        </div>
+        <div class="main__container-textPrice">
+          <span class="main__container-textPrice-newPrice">$149.99</span>
+          <span class="main__container-textPrice-oldPrice">$169.99</span> 
+        </div>
+        <button class="main__container-button"><img src="./assets/images/icon-cart.svg" alt="Icon Cart"> Add to Cart</button> 
       </div>
     </section>
-  </main>
+  </main>  
 
   <footer class="footer">
     <div class="attribution">

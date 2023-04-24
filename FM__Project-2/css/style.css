@@ -1,6 +1,6 @@
 :root{
     --darkCyan: hsl(158, 36%, 37%);
-    --Cream: hsl(30, 38%, 92%);
+    --cream: hsl(30, 38%, 92%);
     --veryDarkBlue: hsl(212, 21%, 14%);
     --darkGrayishBlue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
@@ -9,95 +9,134 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 62.5%;
 }
 @font-face {
     font-family: montserrat;
     src: url(../assets/ttf/Montserrat.ttf);
+}
+@font-face {
     font-family: fraunces;
     src: url(../assets/ttf/Fraunces.ttf);
 }
-
 /* Main */
 .main{
-    background-color: var(--Cream);
+    background-color: var(--cream);
+    max-width: 100%;
     height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.main__container{
+    max-width: 60rem;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main__container{
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
 .main__container-image img{
-    width: 300px;
-    height: 400px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    width: 35rem;
+    height: 40rem;
     object-fit: cover;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.main__container-imageMobile{
+    display: none;
 }
 .main__container-text{
-    background-color: white;
-    max-height: 400px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-color: var(--white);
+    height: 40rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
 }
-.main__container-text h1{
+.main__container-textDescription p{
+    color: var(--darkCyan);
+    font-family: fraunces;
+    font-size: 1.5rem;
+
+}
+.main__container-textDescription h1{
     font-family: montserrat;
-    font-weight: 700;
-    font-size: 40px;
-    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
 }
-
-.main__container-text p{
-    color: var(--darkGrayishBlue);
-    font-family: fraunces;
-    font-size: 15px;
-    text-align: left;
+.main__container-textPrice{
+    margin-top: 3rem;
+    font-family: montserrat;
+    font-size: 1.5rem;
 }
-
-.main__container-text-price{
-    display: flex;
-    margin-top: 20px;
+.main__container-textPrice-newPrice{
+    font-size: 3rem;
+    color: var(--darkCyan);
+    font-weight: bold;
 }
-.main__container-text-price .newPrice{
-    color: green;
-    font-weight: 700;
-    font-size: 30px;
-}
-.main__container-text-price .oldPrice{
+.main__container-textPrice-oldPrice{
     text-decoration: line-through;
-    font-size: 20px;
-    margin-left: 10px;
 }
-  
-.main__container-text button{
+.main__container-button{
     background-color: var(--darkCyan);
-    width: 100%;
-    height: 40px;
-    color: white;
-    border-radius: 10px;
-    font-family: fraunces;
-    font-size: 15px;
-    margin-top: 40px;
-    padding: 10px;
-}
-.newPrice {
-    color: green;
-    font-size: 1.2em; /* ajusta el tamaño de fuente según lo que necesites */
+    color: var(--white);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
 }
 
-/*Footer*/
+/* Footer */
 .footer{
     height: 3vh;
     background-color: pink;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width: 375px){
+    .main__container{
+        flex-direction: column;
+    }
+    .main__container-image img{
+        display: none;
+    }
+    .main__container-imageMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__container-imageMobile img{
+        width: 30rem;
+        height: auto;
+        object-fit: cover;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: none;
+        border-top-right-radius: 2rem;
+        margin-top: 5rem;
+    }
+    .main__container-text{
+        width: 30rem;
+        height: auto;
+        border-top-right-radius: none;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+    .main__container-textDescription p{
+        font-size: 1.5rem;
+    }
+    .main__container-textPrice{
+        margin-top: 1rem;
+    }
+    .main__container-button{
+        margin-top: 0.5rem;
+    }
+    .footer{
+        margin-top: 4rem;
+    }
+}

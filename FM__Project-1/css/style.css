@@ -21,6 +21,7 @@ Weights: 400, 700
     font-family: variableFont;
     src: url(../assets/ttf/Outfit-VariableFont_wght.ttf);
 }
+
 /*Main Index*/
 .main{
     height: 97vh;
