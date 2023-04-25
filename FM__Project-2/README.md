@@ -4,7 +4,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## Overview
 ## Links
 
-- Solution URL: #
+- Solution URL: https://github.com/CristianArielDelgado/CristianArielDelgado.github.io/tree/main/FM__Project-2
 - Live Site URL: https://cristianarieldelgado.github.io/FM__Project-2/index.html
 
 ### My process
@@ -18,5 +18,5 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 #### Author
 
-- Website - [Cristian Ariel Delgado]
+- Website - [Cristian Ariel Delgado](https://cristianarieldelgado.github.io/index.html)
 - Frontend Mentor - [@CristianArielDelgado](https://www.frontendmentor.io/profile/CristianArielDelgado)
