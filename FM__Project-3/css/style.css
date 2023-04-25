@@ -1,0 +1,318 @@
+:root{
+    --softBblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --veryDarkBlue_mainBG: hsl(217, 54%, 11%);
+    --veryDarkBlue_cardBG: hsl(216, 50%, 16%);
+    --veryDarkBlue_line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* NO OLVIDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR */
+html{
+    font-size: 62.5%;
+}
+/* -------------------------------------------------------*/
+@font-face {
+    font-family: outfit;
+    src: url(../assets/ttf/Outfit.ttf);
+}
+/* Main */
+.main{
+    background-color: red/*var(--veryDarkBlue_mainBG)*/;
+    max-width: 100%;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__container{
+    background-color: var(--veryDarkBlue_cardBG);
+    border-radius: 1rem;
+    max-width: 150rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main__container-image img{
+    border-radius: 5rem;
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover;
+    padding: 1rem;
+}
+.main__container-image img:hover:after {
+    content: url("../assets/images/icon-view.svg");
+    color: var(--cyan);
+  }
+.main__container-text h1{
+    color: var(--white);
+    font-family: outfit;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    text-align: right;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.main__container-text h1:hover{
+    color: var(--cyan);
+}
+.main__container-text p{
+    color: var(--veryDarkBlue_line);
+    font-family: outfit;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.main__containter-text-precioETH img{
+    display: flex;
+    
+    /*NOSE Q PONER NOSE Q PONER -*---------------------------- */ 
+}
+.main__containter-text-precioETH p{
+    color: var(--cyan);
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    font-family: outfit;
+    font-weight: 300;
+}
+.main__containter-text-days p{
+    color: var(--veryDarkBlue_line);
+    font-weight: 300;
+}
+.main__containter-text-avatar img{
+    width: 3rem;
+}
+.main__containter-text-avatar p{
+    color: var(--veryDarkBlue_line);
+}
+.main__containter-text-avatar span{
+    color: var(--white);
+}
+.main__containter-text-avatar span:hover{
+    color: var(--cyan);
+}
+/*Footer*/
+.footer{
+    background-color: pink;
+    height: 3vh;
+    width: 100%;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* 
+COPIA  PARA VER CMO MEJORAR
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(217, 54%, 11%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .nft-preview-container {
+        background-color: hsl(216, 50%, 16%);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 0.625rem;
+        max-width: 18rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        height: 35rem;
+      }
+      .nft-img {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .nft-img::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 255, 255, 0.5);
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        border-radius: 1rem; /* added 
+    }
+
+    .nft-img:hover::before {
+      opacity: 1;
+    }
+
+    .nft-img img:hover {
+      position: relative;
+      color: hsl(178, 100%, 50%);
+    }
+
+    .nft-img:hover::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 32px;
+      height: 32px;
+      background-image: url("./images/icon-view.svg");
+      background-size: cover;
+      z-index: 1;
+    }
+
+    .nft-img img {
+      width: 100%;
+      border-radius: 1rem;
+      max-height: 18rem;
+      max-width: 18rem;
+    }
+
+    .text-container {
+      color: hsl(215, 51%, 70%);
+      font-family: "Outfit";
+      text-align: left;
+      padding: 16px;
+      border-radius: 4px;
+      max-width: 320px;
+      margin: 0 auto;
+      font-weight: 200;
+    }
+    .nft-name {
+      font-size: larger;
+      color: white;
+      font-weight: 600;
+    }
+    .nft-name a {
+      text-decoration: none;
+      color: white;
+    }
+    .nft-name a:hover {
+      color: hsl(178, 100%, 50%);
+    }
+    .specs {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 400;
+      border-bottom: 1px solid hsl(215, 23%, 32%);
+    }
+
+    .price {
+      color: aqua;
+      display: flex;
+      align-items: center;
+    }
+
+    .price span {
+      width: 20px;
+      height: 20px;
+      margin-right: 1px;
+      background-image: url("./images/icon-ethereum.svg");
+      background-repeat: no-repeat;
+    }
+
+    .price p {
+      margin: 2;
+    }
+
+    .deadline {
+      display: flex;
+      align-items: center;
+    }
+
+    .deadline span {
+      width: 20px;
+      height: 20px;
+      margin-right: 1px;
+      background-image: url("./images/icon-clock.svg");
+      background-repeat: no-repeat;
+    }
+
+    .deadline p {
+      margin: 2;
+    }
+    .creator img {
+      width: 30px;
+      height: 30px;
+      border: 2px solid white;
+      border-radius: 50%;
+      float: left;
+      margin-right: 10px;
+    }
+    .creator p a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .creator a:hover {
+      color: hsl(178, 100%, 50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="nft-preview-container">
+    <div class="nft-img">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        ><img src="./images/image-equilibrium.jpg" width="285" height="285"
+      /></a>
+    </div>
+    <div class="text-container">
+      <p class="nft-name">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          >Equilibrium #3429</a
+        >
+      </p>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="specs">
+        <div class="price">
+          <span></span>
+          <p>0.041 ETH</p>
+        </div>
+        <div class="deadline">
+          <span></span>
+          <p>3 days left</p>
+        </div>
+      </div>
+      <div class="creator">
+        <img src="./images/image-avatar.png" />
+        <p>
+          Creation of
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >Jules Wyvern</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+*/
