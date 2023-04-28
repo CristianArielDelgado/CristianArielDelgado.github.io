@@ -315,8 +315,90 @@ ul{
 MEDIAS QUERIES 
 Mobile Last  
 */
+@media (max-width: 450px){ 
+    /* INDEX */
+    .header__container-navDesktop{
+        display: none;
+    }
+    .navbar{
+        display: block;
+        width: 25rem;
+        padding: 0.3rem;
+        background-color: var(--primario) !important;
+        font-size: 1.5rem;
+    }
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+    .main__container{
+        max-width: 30rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .main__container-carousel div img{
+        width: 100%;
+        margin: 1rem;
+        padding: 0.2rem;
+        flex: 1;
+    }
+    .main div h1{
+        font-size: 4rem;
+    }
+    .main div p{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        
+    }
+    .footer small{
+        max-width: 30rem;
+        font-size: 1.5rem;
+    }
+    .whatsapp{
+        display: none;
+    }
+    .instagram{
+        display: none;
+    }
 
-@media (max-width: 575px){ 
+    /* Trabajos */
+    .main__container__trabajos{
+        max-width: 30rem;
+        max-height: none;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 2rem;
+    }
+    .main_container__trabajos-video{
+       display: none;
+    }
+    .main_container_trabajos-fotos{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    /* Servicios */
+    .main__container__servicios{
+        max-width: 30rem;
+    }
+    .servicios__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Contacto */
+    .main__container__contacto{
+        max-width: 30rem;
+    }
+    .main__contacto__form{
+        max-width: 30rem;
+        margin: 1rem auto;
+    }
+    .main__contacto__location{
+        display: none;
+    }
+}
+
+@media (max-width: 750px){ 
     /* INDEX */
     .header__container-navDesktop{
         display: none;
