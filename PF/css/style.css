@@ -177,6 +177,7 @@ ul{
     gap: 1rem;
     justify-items: center;
     align-items: center;
+    padding: 1rem;
 }
 .card__header{
     position: relative;
@@ -388,10 +389,6 @@ Mobile Last
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
-
-
-
 
 /* maxwid 43 rem
 
