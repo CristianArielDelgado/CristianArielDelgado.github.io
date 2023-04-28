@@ -372,10 +372,8 @@ Mobile Last
         display: none;
     }
     .main_container_trabajos-fotos{
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: (3, 1fr);
-        width: 70%;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: (6, 1fr);
         margin: 1rem;
-        pad: 5rem;
     }
 }
