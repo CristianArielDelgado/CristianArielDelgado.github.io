@@ -321,10 +321,16 @@ Mobile Last
         display: none;
     }
     .navbar{
-        display: flex;
-        width: 10rem;
-        padding: 0.3rem
+        display: block;
+        width: 30rem;
+        padding: 0.3rem;
+        background-color: var(--primario) !important;
+        font-size: 2rem;
     }
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    
     .main__container{
         max-width: 43rem;
         display: flex;
@@ -379,29 +385,3 @@ Mobile Last
         height: 100%;
     }
 }
-/*
-
-.grid-item {
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.grid-item img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-*/
-
-
-
-/*
-@media (min-width: 768px){
-
-}
-@media (min-width: 992px){
-
-}
-*/

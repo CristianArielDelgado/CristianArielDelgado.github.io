@@ -7,47 +7,56 @@
     <title>Maca Beauty</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
     <!--   CSS   -->
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
     <header class="header">
         <div class="header__container">
+            <!-- Inicio Menu de navegacion DESKTOP-->
             <nav>
-                <!-- Inicio Menu de navegacion DESKTOP-->
                 <ul class="header__container-navDesktop">
                     <li>
-                        <a href="../index.html">Nosotros</a>
+                        <a href="index.html">Nosotros</a>
                     </li>
                     <li>
-                        <a href="./trabajos.html">Trabajos</a>
+                        <a href="./pages/trabajos.html">Trabajos</a>
                     </li>
                     <li>
-                        <a href="../index.html">
-                            <img src="../assets/images/Logo.jpeg"  alt="Logo Maca Beauty">
+                        <a href="index.html">
+                            <img src="./assets/images/Logo.jpeg"  alt="Logo Maca Beauty">
                         </a>
                     </li>
                     <li>
-                        <a href="./servicios.html">Servicios</a>
+                        <a href="./pages/servicios.html">Servicios</a>
                     </li>
                     <li>
-                        <a href="./contacto.html">Contacto</a>
+                        <a href="./pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
-                <!-- Fin Menu de navegacion DESKTOP--> 
-
-                <!-- Inicio Menu de navegacion MOBILE -->
-                <div class="header__container-navMobile">
-                    <ul>
-                        <li>
-                            <img src="../assets/images/Mobile/iconoMenu.png" alt="Icono Menu Mobile">
-                        </li>
-                    </ul>
+            </nav>   
+            <!-- Fin Menu de navegacion DESKTOP--> 
+            <!-- Inicio Menu de navegacion MOBILE -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Menu</a> 
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="../index.html">Nosotros</a>
+                        <a class="nav-link" href="./trabajos.html">Trabajos</a>
+                        <a class="nav-link" aria-current="page" href="#">Servicios</a>
+                        <a class="nav-link"  href="./contacto.html">Contacto</a>
+                    </div>
                 </div>
-                <!-- Fin Menu de navegacion MOBILE-->
             </nav>
+            <!-- Fin Menu de navegacion MOBILE-->
+        </div>   
     </header>
-
 
     <main class="main">
         <section class="main__container__servicios">
