@@ -160,7 +160,7 @@ ul{
 .grid-item img{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     object-fit: cover;
 }
 
@@ -363,19 +363,37 @@ Mobile Last
 
 
     /* Trabajos */
+    .main__container__trabajos{
+        max-width: 43rem;
+        max-height: none;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
     .main_container__trabajos-video{
-        display: none;
+       display: none;
     }
     .main_container_trabajos-fotos{
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: (3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
-    .grid-item{
-        height: 15rem;
-        justify-content: space-between;
+    .grid-item {
+     
     }
-    .gird-item img{
-        width: 80%;
-        height: 80%;
+
+    /* Servicios */
+    .main__container__servicios{
+        max-width: 43rem;
+    }
+    .servicios__cards{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
+
+
+
+/* maxwid 43 rem
+
+
+*/
