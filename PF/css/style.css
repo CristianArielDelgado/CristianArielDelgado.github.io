@@ -332,7 +332,7 @@ Mobile Last
         font-size: 2rem;
     }
     .main__container{
-        max-width: 43rem;
+        max-width: 45rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -352,7 +352,7 @@ Mobile Last
         
     }
     .footer small{
-        max-width: 43rem;
+        max-width: 45rem;
         font-size: 2rem;
     }
     .whatsapp{
@@ -362,10 +362,9 @@ Mobile Last
         display: none;
     }
 
-
     /* Trabajos */
     .main__container__trabajos{
-        max-width: 43rem;
+        max-width: 45rem;
         max-height: none;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -377,20 +376,23 @@ Mobile Last
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
-    .grid-item {
-     
-    }
 
     /* Servicios */
     .main__container__servicios{
-        max-width: 43rem;
+        max-width: 45rem;
     }
     .servicios__cards{
         grid-template-columns: repeat(1, 1fr);
     }
+    /* Contacto */
+    .main__container__contacto{
+        max-width: 45rem;
+    }
+    .main__contacto__form{
+        max-width: 45rem;
+        margin: 1rem auto;
+    }
+    .main__contacto__location{
+        display: none;
+    }
 }
-
-/* maxwid 43 rem
-
-
-*/
